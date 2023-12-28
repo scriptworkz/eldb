@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 app.get("/add", function(req, res) {
-  res.type('json').send({'status' => 200, 'message' => 'success'});
+  res.type('json').send({'status': 200, 'message': 'success'});
 });
 
 app.get("/", (req, res) => res.type('html').send(html));
